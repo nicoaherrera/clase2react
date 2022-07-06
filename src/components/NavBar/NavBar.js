@@ -1,18 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 
-import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, Wrapper } from "./NavBarElements";
-import { FaLaravel } from "react-icons/fa";
+import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./NavBarElements";
+import { FaLaravel, FaBars } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { CardWidget } from "./CardWidget";
+import { FiShoppingCart } from "react-icons/fi";
+
 
 const NavBar = () => {
+      const [showMobileMenu, setShowMobileMenu] = useState(false)
+
+
     return (
         <Container>
             <Wrapper>
+                  <IconContext.Provider value={{ style : {fontSize: "2em"}}}> 
+
+                  
                 <LogoContainer>
                    <FaLaravel/>
                    <p>NUTRIDIET MARKET</p>
                    
                 </LogoContainer>
-                <Menu>
+                <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    <FaBars />
+                </MobileIcon>
+                <Menu open={showMobileMenu}>
                     <MenuItem>
                         <MenuItemLink>
                            HOME
@@ -32,10 +45,15 @@ const NavBar = () => {
                         <MenuItemLink>
                            Contacto
                         </MenuItemLink>
+                       
                     </MenuItem>
+                    <CardWidget>
+                           <FiShoppingCart/>
+                        </CardWidget>   
                 </Menu>
+                </IconContext.Provider>
             </Wrapper>
-        </Container>
+        </Container>    
     );
 };
 
