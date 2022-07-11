@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./NavBarElements";
 import { FaLaravel, FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { CardWidget } from "./CardWidget";
+import { CartWidget } from "./CartWidget";
 import { FiShoppingCart } from "react-icons/fi";
 
 
@@ -47,9 +47,9 @@ const NavBar = () => {
                         </MenuItemLink>
                        
                     </MenuItem>
-                    <CardWidget>
+                    <CartWidget>
                            <FiShoppingCart/>
-                        </CardWidget>   
+                        </CartWidget>   
                 </Menu>
                 </IconContext.Provider>
             </Wrapper>

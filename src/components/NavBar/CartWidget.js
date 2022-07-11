@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const CardWidget = styled.div`
+export const CartWidget = styled.div`
 margin-left: 0.5rem;
 display: flex;
 align-items: center;
@@ -17,3 +17,4 @@ svg{
     margin-right: 0.5rem;
       }
 `;
+
