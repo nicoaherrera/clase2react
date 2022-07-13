@@ -8,11 +8,11 @@ background-color: #23394d;
 
 export const Wrapper = styled.div`
 width: 100%;
-max-wifht: 1300px;
+max-width: 1300px;
 height: 100%;
 display:flex;
 flex-wrap:wrap;
-justify-contect: space-between;
+justify-content: space-between;
 margin: auto;
 `;
 
@@ -36,7 +36,7 @@ svg{
 export const Menu = styled.ul`
 height: 100%;
 display: flex;
-justify-contect: space-between;
+justify-content: space-between;
 list-style: none;
 
 @media screen and (max-width: 960px) {

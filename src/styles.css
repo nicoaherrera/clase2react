@@ -1,0 +1,41 @@
+.itemcard{
+height: 100vh;
+overflow: hidden;
+
+border-radius:1px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+cursor: pointer;
+transition: transform 200ms ease-in;
+}
+
+.contenedorprod{
+    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      
+}
+.cardbody {
+    height: 510px;
+    width: 25%;
+    box-shadow: 0 0 7px #111;
+    margin: 0 30px;
+}
+
+.cardimg{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+.cardtitle{
+    padding:1rem;
+}
+.cardprice{
+    padding: 1rem;
+}
+.carddescription{
+    padding: 0 1rem;
+}
+

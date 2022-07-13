@@ -18,28 +18,39 @@ const ItemCount = ({ stock, initial, onAdd}) => {
     
     
 };
-const Counter = styled.div `
+const CounterDiv = styled.div `
 display: flex;
 font-size: 1em;
 margin: 1em;
 padding: 0.25em 1em;
 border-radius: 3px;
-
-flex-direction: row;
-
+flex-direction: column;
+justify-content: center;
+object-fit: cover;
+box-shadow: 2 black;
 `;
+const CounterBtn = styled.div `
+display: flex;
+font-size: 1.3em;
+margin: 1em;
+padding: 0.50em 1em;
+border-radius: 3px;
+flex-direction: row;
+justify-content: space-between;
+
+`
   return (
-    <Counter>
-        <div className="counter-btn">
+    <CounterDiv>
+        <CounterBtn>
             <button onClick={restar}>-</button>
             <p>{count}</p>
             <button onClick={sumar}>+</button>
-        </div>
+        </CounterBtn>
 
-        <div>
+        
             <button className="add-btn" onClick={onAdd}> Agregar al carrito</button>
-        </div>
-    </Counter>
+        
+    </CounterDiv>
   );
 };
 
