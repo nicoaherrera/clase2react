@@ -27,7 +27,7 @@ border-radius: 3px;
 flex-direction: column;
 justify-content: center;
 object-fit: cover;
-box-shadow: 2 black;
+
 `;
 const CounterBtn = styled.div `
 display: flex;

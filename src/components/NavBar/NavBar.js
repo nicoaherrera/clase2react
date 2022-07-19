@@ -5,7 +5,15 @@ import { FaLaravel, FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { CartWidget } from "./CartWidget";
 import { FiShoppingCart } from "react-icons/fi";
+import {  Link } from "react-router-dom";
 
+const linkstyle = {
+    
+        margin: "0 10px",
+        color: "#64b2ff",
+        textDecoration: "none",
+      
+}
 
 const NavBar = () => {
       const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -16,19 +24,32 @@ const NavBar = () => {
             <Wrapper>
                   <IconContext.Provider value={{ style : {fontSize: "2em"}}}> 
 
-                  
+                 
                 <LogoContainer>
+                
                    <FaLaravel/>
+                <Link to="/" style={{textDecoration:"none"}}>    
                    <p>NUTRIDIET MARKET</p>
-                   
+                </Link>   
                 </LogoContainer>
+               
                 <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     <FaBars />
                 </MobileIcon>
                 <Menu open={showMobileMenu}>
                     <MenuItem>
                         <MenuItemLink>
-                           HOME
+                        <Link to="/" style={linkstyle}>HOME </Link>
+                        </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink>
+                         <Link to="/category/frutas_secas" style={linkstyle}>Frutas Secas </Link>
+                        </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink>
+                        <Link to="/category/varios" style={linkstyle}>Varios </Link>
                         </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
