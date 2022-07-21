@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState ({});
-  const {id} = useParams();
+  const { id } = useParams();
 
   const traerProductoxId = () => {
     return new Promise ((res)=> {
@@ -16,9 +16,9 @@ const ItemDetailContainer = () => {
 })
 }
 
-  useEffect (()=>{
-   traerProductoxId().then(res=>{
-     setItem(res)
+  useEffect (() => {
+   traerProductoxId().then(res => {
+     setItem(res);
    }
    );
   },[id]);

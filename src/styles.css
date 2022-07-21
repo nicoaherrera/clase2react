@@ -34,6 +34,8 @@ transition: transform 200ms ease-in;
 }
 .cardprice{
     padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 .carddescription{
     padding: 0 1rem;

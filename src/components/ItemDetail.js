@@ -17,7 +17,7 @@ const ItemDetail = ({item}) => {
         <div className="titulo-container">
             <h1>{title}</h1>
             
-            <h3 style={{color: "whitesmoke"}}>${price}</h3>
+            <h3 style={{color: "black"}}>${price}</h3>
         </div>
         
         <p>

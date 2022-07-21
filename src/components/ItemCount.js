@@ -2,22 +2,6 @@ import React, {useState} from 'react'
 import styled from 'styled-components';
 
 
-const ItemCount = ({ stock, initial, onAdd}) => {
-  const [count, setCount] = useState(initial);
-
-  const restar = () => {
-    if (count > initial) {
-        setCount(count -1);
-    }
-  };
-
-  const sumar = () => {
-    if (count < stock) {
-        setCount(count + 1);
-    }
-    
-    
-};
 const CounterDiv = styled.div `
 display: flex;
 font-size: 1em;
@@ -36,19 +20,53 @@ margin: 1em;
 padding: 0.50em 1em;
 border-radius: 3px;
 flex-direction: row;
+border: 1px solid;
 justify-content: space-between;
 
 `
+const Button = styled.button `
+    
+    border: 1px solid;
+    border-radius: 2px;
+    padding:3;
+    &:hover {background: "#efefef";color:white}
+
+`
+   
+      
+    
+
+
+
+
+const ItemCount = ({ stock, initial = 1, price, onAdd}) => {
+  const [count, setCount] = useState(initial);
+
+  const restar = () => {
+    if (count > initial) {
+        setCount(count - 1);
+    }
+  };
+
+  const sumar = () => {
+    if (count < stock) {
+        setCount(count + 1);
+    }
+    
+    
+};
+
   return (
     <CounterDiv>
         <CounterBtn>
-            <button onClick={restar}>-</button>
+            <Button onClick={restar}>   -   </Button>
             <p>{count}</p>
-            <button onClick={sumar}>+</button>
+            <Button onClick={sumar}>   +   </Button>
         </CounterBtn>
 
         
-            <button className="add-btn" onClick={onAdd}> Agregar al carrito</button>
+        
+    <Button  onClick={()=>onAdd(count)}>AGREGAR AL CARRITO</Button>
         
     </CounterDiv>
   );
