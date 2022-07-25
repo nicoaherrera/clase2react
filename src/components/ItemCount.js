@@ -66,7 +66,7 @@ const ItemCount = ({ stock, initial = 1, price, onAdd}) => {
 
         
         
-    <Button  onClick={()=>onAdd(count)}>AGREGAR AL CARRITO</Button>
+    <Button  onClick={() => onAdd(count)}>AGREGAR AL CARRITO</Button>
         
     </CounterDiv>
   );

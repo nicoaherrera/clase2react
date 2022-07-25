@@ -33,10 +33,19 @@
   .button {
   
     
+    justify-content: center;
     border: 1px solid;
     border-radius: 2px;
     padding:3;
-align-items: center;}
+    align-items: center;
+    text-decoration: none;
+    list-style: none;}
+
+.linkbutton {
+    display: flex;
+    justify-content: center;
+}
+ 
 
    button:hover {
     background: rgb(35, 65, 75) ;
