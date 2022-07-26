@@ -4,12 +4,14 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import './styles.css'
 import Cart from "./components/Cart";
+import Provider from "./context/CartContext";
 
 function App() {
  
   return (
     
-   <>
+   
+   <Provider>
    <BrowserRouter>
      <NavBar />
      <Routes>
@@ -22,8 +24,9 @@ function App() {
      
      
       
-   </BrowserRouter>  
-   </>
+   </BrowserRouter>
+   </Provider>  
+   
   
   );
 }
