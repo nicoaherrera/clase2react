@@ -69,7 +69,7 @@ const NavBar = () => {
                        
                     </MenuItem>
                     <CartWidget>
-                           <FiShoppingCart/>
+                    <Link to="/Cart"><FiShoppingCart/></Link>
                         </CartWidget>   
                 </Menu>
                 </IconContext.Provider>
