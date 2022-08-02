@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 
  const Cart = () => {
-  const {cart, deleteAll, deleteForId} = useContext (CartContext);
+  const {cart, deleteAll, deleteForId, totalCart} = useContext (CartContext);
   if (cart.length === 0) {
     return (
       <h2>Carrito vacio, ir al <Link to= "/">Home</Link></h2>
@@ -25,6 +25,7 @@ import { CartContext } from "../context/CartContext";
         </div>
       ))
       }
+      <h3>Total: $ {totalCart()}</h3>
       <button onClick={deleteAll}>Vaciar carrito</button>
     </div>
   )
