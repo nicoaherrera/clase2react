@@ -25,7 +25,7 @@ import { CartContext } from "../context/CartContext";
         </div>
       ))
       }
-      <h3>Total: $ {totalCart()}</h3>
+      <h3>Total: $ {totalCart()}  <button >Finalizar compra</button> </h3> 
       <button onClick={deleteAll}>Vaciar carrito</button>
     </div>
   )

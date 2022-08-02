@@ -6,6 +6,9 @@ import { IconContext } from "react-icons";
 import { CartWidget } from "./CartWidget";
 import { FiShoppingCart } from "react-icons/fi";
 import {  Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
+
+
 
 const linkstyle = {
     
@@ -17,7 +20,7 @@ const linkstyle = {
 
 const NavBar = () => {
       const [showMobileMenu, setShowMobileMenu] = useState(false)
-
+      const {totalProducts} = useCartContext();
 
     return (
         <Container>
@@ -68,7 +71,7 @@ const NavBar = () => {
                         </MenuItemLink>
                        
                     </MenuItem>
-                    <CartWidget>
+                    <CartWidget><span style={{color:"white"}}>{totalProducts()}</span>
                     <Link to="/Cart"><FiShoppingCart/></Link>
                         </CartWidget>   
                 </Menu>

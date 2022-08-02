@@ -1,6 +1,9 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, useContext } from "react";
 
+ 
 export const CartContext = createContext()
+
+export const useCartContext = () => useContext(CartContext);
 
 const Provider = (props) => {
     const [cart, setCart] = useState([]);
@@ -37,7 +40,7 @@ const Provider = (props) => {
         const productosFiltrados = cart.filter((item) => item.id !== id)
         setCart(productosFiltrados);
     }
-    return <CartContext.Provider value={{cart, addToCart, deleteAll, deleteForId, totalCart}}> {props.children} </CartContext.Provider>;
+    return <CartContext.Provider value={{cart, addToCart, deleteAll, deleteForId, totalCart, totalProducts}}> {props.children} </CartContext.Provider>;
     
 };
 export default Provider
