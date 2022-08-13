@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+This project was developed for the ReactJs course on the CoderHouse platform
+
+![www.coderhouse.com](https://camo.githubusercontent.com/9dc7c176dc18ad6e9f43075916e1bc578195c11ce73a9d0a4bfcc4126a8acb07/68747470733a2f2f656d7072656c6174616d2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031392f31302f6c6f676f732d636f646572686f7573652d30312e706e67)
+
+
+### Author
+
+> Nicolas A. Herrera Contact:  [nicoaherrera@outlook.com](mailto:nicoaherrera@outlook.com)  >  [linkedin](https://www.linkedin.com/in/nicolasaherrera/)
+
+### Demo
+
+![Demo de una compra](https://github.com/nicoaherrera/clase2react/blob/main/public/img/gifcursoreact.gif?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Main libraries used in the project
+
+library
+
+used
+
+[ReactJs](https://es.reactjs.org/)
+
+JavaScript framework
+
+[Create React App](https://github.com/facebook/create-react-app)
+
+Create React Project
+
+[SweetAlert](https://sweetalert.js.org/)
+
+[React-Toastify](https://www.npmjs.com/package/react-toastify)
+
+[React-Bootstrap](https://react-bootstrap.github.io/)
+
+[React-Icons](https://react-icons.github.io/react-icons/)
+
+[Firebase](https://firebase.google.com/?hl=es)
+
+Authentication & DataBase
+
+[React Router](https://reactrouter.com/)
+
+Router
 
 ## Available Scripts
 
