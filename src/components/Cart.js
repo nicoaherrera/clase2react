@@ -7,7 +7,7 @@ import Form from "./Form";
 
  const Cart = () => {
   const {cart, deleteAll, deleteForId, totalCart} = useContext (CartContext);
-
+/* 
   const order = {
     buyer:{
       name: 'Nico',
@@ -23,7 +23,7 @@ import Form from "./Form";
     const orderCollection = collection(db, 'orders');
     addDoc(orderCollection, order)
     .then(({id}) => console.log(id))
-  }
+  } */
 
 
   if (cart.length === 0) {
@@ -47,7 +47,7 @@ import Form from "./Form";
         </div>
       ))
       }
-      <h3>Total: $ {totalCart()}  <button onClick={handleClick} >Finalizar compra</button> </h3>
+      <h3>Total: $ {totalCart()}</h3>
       <div><Form/></div>
       <button onClick={deleteAll}>Vaciar carrito</button>
     </div>

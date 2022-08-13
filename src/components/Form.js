@@ -1,4 +1,4 @@
-/* import './form.css' */
+
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { useContext } from 'react'
 import { CartContext } from "../context/CartContext";
@@ -36,7 +36,7 @@ const Formulario = () => {
         }).catch((err) => {
             console.log(err)
         })
-         /* let numCompra = res.id */
+        
         return deleteAll();
         
         
