@@ -6,6 +6,7 @@ import './styles.css'
 import Cart from "./components/Cart";
 import Provider from "./context/CartContext";
 
+
 function App() {
  
   return (
@@ -19,11 +20,7 @@ function App() {
      <Route path="/category/:category" element={<ItemListContainer className ="contenedorprod" />}/>
      <Route path="/item/:id" element={<ItemDetailContainer />} />
      <Route path="/cart" element={<Cart />} />
-     
-     </Routes>
-     
-     
-      
+     </Routes> 
    </BrowserRouter>
    </Provider>  
    

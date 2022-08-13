@@ -71,7 +71,7 @@ const NavBar = () => {
                         </MenuItemLink>
                        
                     </MenuItem>
-                    <CartWidget><span style={{color:"white"}}>{totalProducts()}</span>
+                    <CartWidget><span style={{color:"white"}}>{totalProducts() || ''}</span>
                     <Link to="/Cart"><FiShoppingCart/></Link>
                         </CartWidget>   
                 </Menu>
