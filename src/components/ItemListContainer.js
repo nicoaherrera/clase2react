@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
     const [items, setItems] = useState ([]);
     const { category } = useParams();
 
